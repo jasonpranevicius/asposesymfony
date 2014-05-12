@@ -1,0 +1,21 @@
+{
+    "name": "aspose/cloud-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Bundle creates a wrapper for the Aspose Cloud PHP SDK",
+    "keywords": ["Aspose", "Cloud", "SDK"],
+    "homepage": "https://github.com/asposeforcloud/Aspose_Cloud_For_Symfony",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masood Anwer",
+            "email": "masood.anwer@aspose.com"
+        }
+    ],    
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.0"
+    },
+    "autoload": {
+        "psr-0": { "Aspose\\Bundle\\CloudBundle": "" }
+    },
+    "target-dir": "Aspose/Bundle/CloudBundle"
+}

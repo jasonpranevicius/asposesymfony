@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "This is a symfony2 bundle to use Aspose cloud service in symfony2 applications quickly and easily. Aspose for Cloud is a REST API to work with a number of file formats including word precessing documents, spreadsheets, presentations, PDFs and images.",
     "keywords": ["Aspose", "Cloud", "SDK"],
-    "homepage": "https://github.com/asposeforcloud/Aspose_Cloud_For_Symfony",
+    "homepage": "https://github.com/asposeforcloud/asposesymfony",
     "license": "MIT",
     "authors": [
         {

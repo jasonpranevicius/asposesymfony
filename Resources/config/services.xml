@@ -39,6 +39,9 @@
 		<parameter key="asposewordsextractor.class">Aspose\Cloud\Words\Extractor</parameter>
 		<parameter key="asposewordsfield.class">Aspose\Cloud\Words\Field</parameter>
 		<parameter key="asposewordsmailmerge.class">Aspose\Cloud\Words\MailMerge</parameter>
+		
+		<parameter key="asposeemailconverter.class">Aspose\Cloud\Email\Converter</parameter>
+		<parameter key="asposeemaildocument.class">Aspose\Cloud\Email\Document</parameter>
     </parameters>
 
     <services>
@@ -117,6 +120,13 @@
 		</service>  
 		<service id="asposewordsfield" class="%asposewordsfield.class%" public="true"></service>
 		<service id="asposewordsmailmerge" class="%asposewordsmailmerge.class%" public="true"></service> 
+		
+		<service id="asposeemailconverter" class="%asposeemailconverter.class%" public="true">
+			<argument>%filename%</argument>
+		</service>
+		<service id="asposeemaildocument" class="%asposeemaildocument.class%" public="true">
+			<argument>%filename%</argument>
+		</service> 
       
     </services>
 </container>

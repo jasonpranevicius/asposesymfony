@@ -4,129 +4,150 @@
 
     <parameters>		
         <parameter key="asposeproduct.class">Aspose\Cloud\Common\Product</parameter>
-		<parameter key="asposeapp.class">Aspose\Cloud\Common\AsposeApp</parameter>
-		<parameter key="asposeutils.class">Aspose\Cloud\Common\Utils</parameter>
+        <parameter key="asposeapp.class">Aspose\Cloud\Common\AsposeApp</parameter>
+        <parameter key="asposeutils.class">Aspose\Cloud\Common\Utils</parameter>
 
-		<parameter key="asposebarcodebuilder.class">Aspose\Cloud\Barcode\BarCodeBuilder</parameter>
-		<parameter key="asposebarcodereader.class">Aspose\Cloud\Barcode\BarCodeReader</parameter>
+        <parameter key="asposebarcodebuilder.class">Aspose\Cloud\Barcode\BarCodeBuilder</parameter>
+        <parameter key="asposebarcodereader.class">Aspose\Cloud\Barcode\BarCodeReader</parameter>
 
-		<parameter key="asposecellscharteditor.class">Aspose\Cloud\Cells\ChartEditor</parameter>
-		<parameter key="asposecellsconverter.class">Aspose\Cloud\Cells\Converter</parameter>
-		<parameter key="asposecellsextractor.class">Aspose\Cloud\Cells\Extractor</parameter>
-		<parameter key="asposecellstexteditor.class">Aspose\Cloud\Cells\TextEditor</parameter>
-		<parameter key="asposecellsworkbook.class">Aspose\Cloud\Cells\Workbook</parameter>
-		<parameter key="asposecellsworksheet.class">Aspose\Cloud\Cells\Worksheet</parameter>
+        <parameter key="asposecellscharteditor.class">Aspose\Cloud\Cells\ChartEditor</parameter>
+        <parameter key="asposecellsconverter.class">Aspose\Cloud\Cells\Converter</parameter>
+        <parameter key="asposecellsextractor.class">Aspose\Cloud\Cells\Extractor</parameter>
+        <parameter key="asposecellstexteditor.class">Aspose\Cloud\Cells\TextEditor</parameter>
+        <parameter key="asposecellsworkbook.class">Aspose\Cloud\Cells\Workbook</parameter>
+        <parameter key="asposecellsworksheet.class">Aspose\Cloud\Cells\Worksheet</parameter>
 
-		<parameter key="asposeimagingimage.class">Aspose\Cloud\Imaging\Image</parameter>
+        <parameter key="asposeimagingimage.class">Aspose\Cloud\Imaging\Image</parameter>
 
-		<parameter key="asposeocrextractor.class">Aspose\Cloud\OCR\Extractor</parameter>
+        <parameter key="asposeocrextractor.class">Aspose\Cloud\OCR\Extractor</parameter>
 
-		<parameter key="asposepdfannotationeditor.class">Aspose\Cloud\Pdf\AnnotationEditor</parameter>
-		<parameter key="asposepdfconverter.class">Aspose\Cloud\Pdf\Converter</parameter>
-		<parameter key="asposepdfdocument.class">Aspose\Cloud\Pdf\Document</parameter>
-		<parameter key="asposepdfextractor.class">Aspose\Cloud\Pdf\Extractor</parameter>
-		<parameter key="asposepdftexteditor.class">Aspose\Cloud\Pdf\TextEditor</parameter>
+        <parameter key="asposepdfannotationeditor.class">Aspose\Cloud\Pdf\AnnotationEditor</parameter>
+        <parameter key="asposepdfconverter.class">Aspose\Cloud\Pdf\Converter</parameter>
+        <parameter key="asposepdfdocument.class">Aspose\Cloud\Pdf\Document</parameter>
+        <parameter key="asposepdfextractor.class">Aspose\Cloud\Pdf\Extractor</parameter>
+        <parameter key="asposepdftexteditor.class">Aspose\Cloud\Pdf\TextEditor</parameter>
 
-		<parameter key="asposeslidesconverter.class">Aspose\Cloud\Slides\Converter</parameter>
-		<parameter key="asposeslidesdocument.class">Aspose\Cloud\Slides\Document</parameter>
-		<parameter key="asposeslidesextractor.class">Aspose\Cloud\Slides\Extractor</parameter>
+        <parameter key="asposeslidesconverter.class">Aspose\Cloud\Slides\Converter</parameter>
+        <parameter key="asposeslidesdocument.class">Aspose\Cloud\Slides\Document</parameter>
+        <parameter key="asposeslidesextractor.class">Aspose\Cloud\Slides\Extractor</parameter>
 
-		<parameter key="asposestoragefolder.class">Aspose\Cloud\Storage\Folder</parameter>
+        <parameter key="asposestoragefolder.class">Aspose\Cloud\Storage\Folder</parameter>
 
-		<parameter key="asposewordsconverter.class">Aspose\Cloud\Words\Converter</parameter>
-		<parameter key="asposewordsdocument.class">Aspose\Cloud\Words\Document</parameter>
-		<parameter key="asposewordsdocumentbuilder.class">Aspose\Cloud\Words\DocumentBuilder</parameter>
-		<parameter key="asposewordsextractor.class">Aspose\Cloud\Words\Extractor</parameter>
-		<parameter key="asposewordsfield.class">Aspose\Cloud\Words\Field</parameter>
-		<parameter key="asposewordsmailmerge.class">Aspose\Cloud\Words\MailMerge</parameter>
-		
-		<parameter key="asposeemailconverter.class">Aspose\Cloud\Email\Converter</parameter>
-		<parameter key="asposeemaildocument.class">Aspose\Cloud\Email\Document</parameter>
+        <parameter key="asposewordsconverter.class">Aspose\Cloud\Words\Converter</parameter>
+        <parameter key="asposewordsdocument.class">Aspose\Cloud\Words\Document</parameter>
+        <parameter key="asposewordsdocumentbuilder.class">Aspose\Cloud\Words\DocumentBuilder</parameter>
+        <parameter key="asposewordsextractor.class">Aspose\Cloud\Words\Extractor</parameter>
+        <parameter key="asposewordsfield.class">Aspose\Cloud\Words\Field</parameter>
+        <parameter key="asposewordsmailmerge.class">Aspose\Cloud\Words\MailMerge</parameter>
+
+        <parameter key="asposeemailconverter.class">Aspose\Cloud\Email\Converter</parameter>
+        <parameter key="asposeemaildocument.class">Aspose\Cloud\Email\Document</parameter>
+
+        <parameter key="asposetasksconverter.class">Aspose\Cloud\Tasks\Converter</parameter>
+        <parameter key="asposetasksdocument.class">Aspose\Cloud\Tasks\Document</parameter>
+        <parameter key="asposetasksresource.class">Aspose\Cloud\Tasks\Resource</parameter>
+        <parameter key="asposetasksassignment.class">Aspose\Cloud\Tasks\Assignment</parameter>
+        <parameter key="asposetaskscalendar.class">Aspose\Cloud\Tasks\Calendar</parameter>
     </parameters>
 
     <services>
-		<service id="asposeproduct" class="%asposeproduct.class%" public="true"></service> 
-		<service id="asposeapp" class="%asposeapp.class%" public="true"></service> 
-		<service id="asposeutils" class="%asposeutils.class%" public="true"></service> 
+        <service id="asposeproduct" class="%asposeproduct.class%" public="true"></service> 
+        <service id="asposeapp" class="%asposeapp.class%" public="true"></service> 
+        <service id="asposeutils" class="%asposeutils.class%" public="true"></service> 
 
-		<service id="asposebarcodebuilder" class="%asposebarcodebuilder.class%" public="true"></service>
-		<service id="asposebarcodereader" class="%asposebarcodereader.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
+        <service id="asposebarcodebuilder" class="%asposebarcodebuilder.class%" public="true"></service>
+        <service id="asposebarcodereader" class="%asposebarcodereader.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
 
-		<service id="asposecellscharteditor" class="%asposecellscharteditor.class%" public="true">
-			<argument>%filename%</argument>
-			<argument>%worksheetname%</argument>
-		</service>
-		<service id="asposecellsconverter" class="%asposecellsconverter.class%" public="true"></service>  
-		<service id="asposecellsextractor" class="%asposecellsextractor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposecellstexteditor" class="%asposecellstexteditor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposecellsworkbook" class="%asposecellsworkbook.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposecellsworksheet" class="%asposecellsworksheet.class%" public="true">
-			<argument>%filename%</argument>
-			<argument>%worksheetname%</argument>
-		</service>  
+        <service id="asposecellscharteditor" class="%asposecellscharteditor.class%" public="true">
+                <argument>%filename%</argument>
+                <argument>%worksheetname%</argument>
+        </service>
+        <service id="asposecellsconverter" class="%asposecellsconverter.class%" public="true"></service>  
+        <service id="asposecellsextractor" class="%asposecellsextractor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposecellstexteditor" class="%asposecellstexteditor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposecellsworkbook" class="%asposecellsworkbook.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposecellsworksheet" class="%asposecellsworksheet.class%" public="true">
+                <argument>%filename%</argument>
+                <argument>%worksheetname%</argument>
+        </service>  
 
-		<service id="asposeimagingimage" class="%asposeimagingimage.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
+        <service id="asposeimagingimage" class="%asposeimagingimage.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
 
-		<service id="asposeocrextractor" class="%asposeocrextractor.class%" public="true"></service>  
+        <service id="asposeocrextractor" class="%asposeocrextractor.class%" public="true"></service>  
 
-		<service id="asposepdfannotationeditor" class="%asposepdfannotationeditor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposepdfconverter" class="%asposepdfconverter.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposepdfdocument" class="%asposepdfdocument.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposepdfextractor" class="%asposepdfextractor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposepdftexteditor" class="%asposepdftexteditor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
+        <service id="asposepdfannotationeditor" class="%asposepdfannotationeditor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposepdfconverter" class="%asposepdfconverter.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposepdfdocument" class="%asposepdfdocument.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposepdfextractor" class="%asposepdfextractor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposepdftexteditor" class="%asposepdftexteditor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
 
 
-		<service id="asposeslidesconverter" class="%asposeslidesconverter.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposeslidesdocument" class="%asposeslidesdocument.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposeslidesextractor" class="%asposeslidesextractor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
+        <service id="asposeslidesconverter" class="%asposeslidesconverter.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposeslidesdocument" class="%asposeslidesdocument.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposeslidesextractor" class="%asposeslidesextractor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
 
-		<service id="asposestoragefolder" class="%asposestoragefolder.class%" public="true"></service>
+        <service id="asposestoragefolder" class="%asposestoragefolder.class%" public="true"></service>
 
-		<service id="asposewordsconverter" class="%asposewordsconverter.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposewordsdocument" class="%asposewordsdocument.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposewordsdocumentbuilder" class="%asposewordsdocumentbuilder.class%" public="true"></service>
-		<service id="asposewordsextractor" class="%asposewordsextractor.class%" public="true">
-			<argument>%filename%</argument>
-		</service>  
-		<service id="asposewordsfield" class="%asposewordsfield.class%" public="true"></service>
-		<service id="asposewordsmailmerge" class="%asposewordsmailmerge.class%" public="true"></service> 
+        <service id="asposewordsconverter" class="%asposewordsconverter.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposewordsdocument" class="%asposewordsdocument.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposewordsdocumentbuilder" class="%asposewordsdocumentbuilder.class%" public="true"></service>
+        <service id="asposewordsextractor" class="%asposewordsextractor.class%" public="true">
+                <argument>%filename%</argument>
+        </service>  
+        <service id="asposewordsfield" class="%asposewordsfield.class%" public="true"></service>
+        <service id="asposewordsmailmerge" class="%asposewordsmailmerge.class%" public="true"></service> 
 		
-		<service id="asposeemailconverter" class="%asposeemailconverter.class%" public="true">
-			<argument>%filename%</argument>
-		</service>
-		<service id="asposeemaildocument" class="%asposeemaildocument.class%" public="true">
-			<argument>%filename%</argument>
-		</service> 
-      
+        <service id="asposeemailconverter" class="%asposeemailconverter.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposeemaildocument" class="%asposeemaildocument.class%" public="true">
+                <argument>%filename%</argument>
+        </service> 
+                
+        <service id="asposetasksconverter" class="%asposetasksconverter.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposetasksdocument" class="%asposetasksdocument.class%" public="true">
+                <argument>%filename%</argument>
+        </service> 
+        <service id="asposetasksresource" class="%asposetasksresource.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
+        <service id="asposetasksassignment" class="%asposetasksassignment.class%" public="true">
+                <argument>%filename%</argument>
+        </service> 
+        <service id="asposetaskscalendar" class="%asposetaskscalendar.class%" public="true">
+                <argument>%filename%</argument>
+        </service>
     </services>
 </container>

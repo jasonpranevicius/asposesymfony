@@ -13,8 +13,7 @@ Add the following lines to your composer.json file:
 {
     // ...
     require: {
-        // ..
-        "aspose/cloud-sdk-php": "dev-master",
+        // ..        
         "aspose/cloud-bundle": "dev-master"
 
     }

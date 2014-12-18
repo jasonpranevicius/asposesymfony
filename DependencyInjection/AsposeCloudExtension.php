@@ -44,9 +44,7 @@ class AsposeCloudExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-		$container->setParameter('filename', 'output');
-		$container->setParameter('worksheetname', 'sheet1');
-
+        $container->setParameter('aspose_cloud', $config);
     }
 
 }

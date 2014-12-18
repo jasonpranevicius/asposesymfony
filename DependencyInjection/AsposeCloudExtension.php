@@ -44,7 +44,10 @@ class AsposeCloudExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('aspose_cloud', $config);
+        $container->setParameter('aspose.url', $config['url']);
+        $container->setParameter('aspose.app.key', $config['app']['key']);
+        $container->setParameter('aspose.app.sid', $config['app']['sid']);
+        $container->setParameter('aspose.app.outputLocation', $config['app']['outputLocation']);
     }
 
 }

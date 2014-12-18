@@ -41,9 +41,16 @@ parameters:
 services:
     aspose.product:
         class: %aspose.product.class%
+        calls:
+            - [ setBaseProductUri, [%aspose.url%] ]
 
     aspose.app:
         class: %aspose.app.class%
+        calls:
+            - [ setAppKey, [%aspose.app.key%] ]
+            - [ setAppSID, [%aspose.app.sid%] ]
+            - [ setOutPutLocation, [%aspose.app.outputLocation%] ]
+            - [ setDebug, [%kernel.debug%] ]
 
     aspose.utils:
         class: %aspose.utils.class%

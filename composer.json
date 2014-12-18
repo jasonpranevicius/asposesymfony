@@ -11,8 +11,9 @@
             "email": "masood.anwer@aspose.com"
         }
     ],    
-    "require-dev": {
-        "symfony/framework-bundle": ">=2.0"
+    "require": {
+        "symfony/framework-bundle": ">=2.0",
+        "aspose/cloud-sdk-php": "dev-master"
     },
     "autoload": {
         "psr-0": { "Aspose\\Bundle\\CloudBundle": "" }

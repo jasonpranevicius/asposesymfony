@@ -1,6 +1,6 @@
 #Aspose Cloud for Symfony
 
-This bundle allows you to work with Aspose Cloud SDK in your Symfony applications quickly and easily. 
+This bundle allows you to work with [Aspose Cloud SDK](https://cloud.aspose.com/) in your Symfony applications 
 
 
 Installation
@@ -8,29 +8,20 @@ Installation
 
 Add the following lines to your composer.json file:
 
-<pre>
+```json
 // composer.json
 {
-    // ...
     require: {
-        // ..        
         "aspose/cloud-bundle": "dev-master"
-
     }
 }
-</pre>
+```
 
+Install the new dependencies by running `composer update` from the directory where your composer.json file is located.
 
-Now, you can install the new dependencies by running Composer's update command from the directory where your composer.json file is located.
+Update your `AppKernel.php` by registering the new bundle:
 
-<pre>
-    composer update
-</pre>
-
-
-Update your AppKernel.php file, and register the new bundle:
-
-<pre>
+```php
 // app/AppKernel.php
 public function registerBundles()
 {
@@ -39,15 +30,33 @@ public function registerBundles()
     // ...
 );
 }
-</pre>
+```
+
+Add you Aspose API key to your config
+
+```yml
+// app/config/config.yml
+
+aspose_cloud:
+    url: http://api.aspose.com/v1.1
+    app:
+        sid: yoursidhere
+        key: yourkeyhere
+        outputLocation: "%kernel.cache_dir%/aspose_cloud/" # let the API save files in the cache directory by default
+```
+
 
 Usage
 ----------------------------------
 
-The Bundle is called as a standard service.
+To configure the initial credentials in the static fields of the `AsposeApp`, first get it from the container
 
-<pre>
-$this->get('asposeapp');
-</pre>
+```
+// Bundle/Controller/DemoController.php
+$app = $this->get('aspose.app');
 
-This will return you object of Product class and you can access properties and methods of class.
+$wordConverter = $this->get('aspose.wordsconverter');
+$wordConverter->setFilename($absolutePath)
+              ->convert();
+
+```

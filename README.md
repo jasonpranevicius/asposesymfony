@@ -51,7 +51,7 @@ Usage
 
 To configure the initial credentials in the static fields of the `AsposeApp`, first get it from the container
 
-```
+```php
 // Bundle/Controller/DemoController.php
 $app = $this->get('aspose.app');
 

@@ -153,6 +153,8 @@ services:
 
     aspose.wordsdocument:
         class: %aspose.wordsdocument.class%
+        arguments:
+            - %filename%
 
     aspose.wordsdocumentbuilder:
         class: %aspose.wordsdocumentbuilder.class%

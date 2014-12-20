@@ -48,6 +48,11 @@ class AsposeCloudExtension extends Extension
         $container->setParameter('aspose.app.key', $config['app']['key']);
         $container->setParameter('aspose.app.sid', $config['app']['sid']);
         $container->setParameter('aspose.app.outputLocation', $config['app']['outputLocation']);
+
+        // create the cache directory where API can temporarly write the files
+        if (!file_exists($config['app']['outputLocation'])) {
+            mkdir($config['app']['outputLocation']);
+        }
     }
 
 }

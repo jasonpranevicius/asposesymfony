@@ -20,10 +20,10 @@
  
 namespace Aspose\Bundle\CloudBundle\DependencyInjection;
 
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Config\FileLocator;
-use Symfony\Component\DependencyInjection\Loader;
 
 
 /**
@@ -38,15 +38,21 @@ class AsposeCloudExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-		$loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.xml');
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-		$container->setParameter('filename', 'output');
-		$container->setParameter('worksheetname', 'sheet1');
+        $container->setParameter('aspose.url', $config['url']);
+        $container->setParameter('aspose.app.key', $config['app']['key']);
+        $container->setParameter('aspose.app.sid', $config['app']['sid']);
+        $container->setParameter('aspose.app.outputLocation', $config['app']['outputLocation']);
 
+        // create the cache directory where API can temporarly write the files
+        if (!file_exists($config['app']['outputLocation'])) {
+            mkdir($config['app']['outputLocation']);
+        }
     }
 
 }

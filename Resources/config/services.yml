@@ -1,0 +1,206 @@
+parameters:
+    aspose.product.class: "Aspose\\Cloud\\Common\\Product"
+    aspose.app.class: "Aspose\\Cloud\\Common\\AsposeApp"
+    aspose.utils.class: "Aspose\\Cloud\\Common\\Utils"
+    aspose.barcodebuilder.class: "Aspose\\Cloud\\Barcode\\BarCodeBuilder"
+    aspose.barcodereader.class: "Aspose\\Cloud\\Barcode\\BarCodeReader"
+    aspose.cellscharteditor.class: "Aspose\\Cloud\\Cells\\ChartEditor"
+    aspose.cellsconverter.class: "Aspose\\Cloud\\Cells\\Converter"
+    aspose.cellsextractor.class: "Aspose\\Cloud\\Cells\\Extractor"
+    aspose.cellstexteditor.class: "Aspose\\Cloud\\Cells\\TextEditor"
+    aspose.cellsworkbook.class: "Aspose\\Cloud\\Cells\\Workbook"
+    aspose.cellsworksheet.class: "Aspose\\Cloud\\Cells\\Worksheet"
+    aspose.imagingimage.class: "Aspose\\Cloud\\Imaging\\Image"
+    aspose.ocrextractor.class: "Aspose\\Cloud\\OCR\\Extractor"
+    aspose.pdfannotationeditor.class: "Aspose\\Cloud\\Pdf\\AnnotationEditor"
+    aspose.pdfconverter.class: "Aspose\\Cloud\\Pdf\\Converter"
+    aspose.pdfdocument.class: "Aspose\\Cloud\\Pdf\\Document"
+    aspose.pdfextractor.class: "Aspose\\Cloud\\Pdf\\Extractor"
+    aspose.pdftexteditor.class: "Aspose\\Cloud\\Pdf\\TextEditor"
+    aspose.slidesconverter.class: "Aspose\\Cloud\\Slides\\Converter"
+    aspose.slidesdocument.class: "Aspose\\Cloud\\Slides\\Document"
+    aspose.slidesextractor.class: "Aspose\\Cloud\\Slides\\Extractor"
+    aspose.storagefolder.class: "Aspose\\Cloud\\Storage\\Folder"
+    aspose.wordsconverter.class: "Aspose\\Cloud\\Words\\Converter"
+    aspose.wordsdocument.class: "Aspose\\Cloud\\Words\\Document"
+    aspose.wordsdocumentbuilder.class: "Aspose\\Cloud\\Words\\DocumentBuilder"
+    aspose.wordsextractor.class: "Aspose\\Cloud\\Words\\Extractor"
+    aspose.wordsfield.class: "Aspose\\Cloud\\Words\\Field"
+    aspose.wordsmailmerge.class: "Aspose\\Cloud\\Words\\MailMerge"
+    aspose.emailconverter.class: "Aspose\\Cloud\\Email\\Converter"
+    aspose.emaildocument.class: "Aspose\\Cloud\\Email\\Document"
+    aspose.tasksconverter.class: "Aspose\\Cloud\\Tasks\\Converter"
+    aspose.tasksdocument.class: "Aspose\\Cloud\\Tasks\\Document"
+    aspose.tasksresource.class: "Aspose\\Cloud\\Tasks\\Resource"
+    aspose.tasksassignment.class: "Aspose\\Cloud\\Tasks\\Assignment"
+    aspose.taskscalendar.class: "Aspose\\Cloud\\Tasks\\Calendar"
+
+    filename: output
+    worksheetname: sheet1
+
+services:
+    aspose.product:
+        class: %aspose.product.class%
+        calls:
+            - [ setBaseProductUri, [%aspose.url%] ]
+
+    aspose.app:
+        class: %aspose.app.class%
+        calls:
+            - [ setAppKey, [%aspose.app.key%] ]
+            - [ setAppSID, [%aspose.app.sid%] ]
+            - [ setOutPutLocation, [%aspose.app.outputLocation%] ]
+            - [ setDebug, [%kernel.debug%] ]
+
+    aspose.utils:
+        class: %aspose.utils.class%
+
+    aspose.barcodebuilder:
+        class: %aspose.barcodebuilder.class%
+        arguments:
+            - %filename%
+
+    aspose.barcodereader:
+        class: %aspose.barcodereader.class%
+        arguments:
+            - %filename%
+            - %worksheetname%
+
+    aspose.cellscharteditor:
+        class: %aspose.cellscharteditor.class%
+
+    aspose.cellsconverter:
+        class: %aspose.cellsconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.cellsextractor:
+        class: %aspose.cellsextractor.class%
+        arguments:
+            - %filename%
+
+    aspose.cellstexteditor:
+        class: %aspose.cellstexteditor.class%
+        arguments:
+            - %filename%
+
+    aspose.cellsworkbook:
+        class: %aspose.cellsworkbook.class%
+        arguments:
+             - %filename%
+             - %worksheetname%
+
+    aspose.cellsworksheet:
+        class: %aspose.cellsworksheet.class%
+        arguments:
+            - %filename%
+
+    aspose.imagingimage:
+        class: %aspose.imagingimage.class%
+
+    aspose.ocrextractor:
+        class: %aspose.ocrextractor.class%
+        arguments:
+            - %filename%
+
+    aspose.pdfannotationeditor:
+        class: %aspose.pdfannotationeditor.class%
+        arguments:
+            - %filename%
+
+    aspose.pdfconverter:
+        class: %aspose.pdfconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.pdfdocument:
+        class: %aspose.pdfdocument.class%
+        arguments:
+            - %filename%
+
+    aspose.pdfextractor:
+        class: %aspose.pdfextractor.class%
+        arguments:
+            - %filename%
+
+    aspose.pdftexteditor:
+        class: %aspose.pdftexteditor.class%
+        arguments:
+            - %filename%
+
+    aspose.slidesconverter:
+        class: %aspose.slidesconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.slidesdocument:
+        class: %aspose.slidesdocument.class%
+        arguments:
+            - %filename%
+
+    aspose.slidesextractor:
+        class: %aspose.slidesextractor.class%
+
+    aspose.storagefolder:
+        class: %aspose.storagefolder.class%
+        arguments:
+            - %filename%
+
+    aspose.wordsconverter:
+        class: %aspose.wordsconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.wordsdocument:
+        class: %aspose.wordsdocument.class%
+        arguments:
+            - %filename%
+
+    aspose.wordsdocumentbuilder:
+        class: %aspose.wordsdocumentbuilder.class%
+        arguments:
+            - %filename%
+
+    aspose.wordsextractor:
+        class: %aspose.wordsextractor.class%
+
+    aspose.wordsfield:
+        class: %aspose.wordsfield.class%
+
+    aspose.wordsmailmerge:
+        class: %aspose.wordsmailmerge.class%
+        arguments:
+            - %filename%
+
+    aspose.emailconverter:
+        class: %aspose.emailconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.emaildocument:
+        class: %aspose.emaildocument.class%
+        arguments:
+            - %filename%
+
+    aspose.tasksconverter:
+        class: %aspose.tasksconverter.class%
+        arguments:
+            - %filename%
+
+    aspose.tasksdocument:
+        class: %aspose.tasksdocument.class%
+        arguments:
+            - %filename%
+
+    aspose.tasksresource:
+        class: %aspose.tasksresource.class%
+        arguments:
+            - %filename%
+
+    aspose.tasksassignment:
+        class: %aspose.tasksassignment.class%
+        arguments:
+            - %filename%
+
+    aspose.taskscalendar:
+      class: %aspose.taskscalendar.class%

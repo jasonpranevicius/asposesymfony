@@ -36,7 +36,20 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('cloudsdk');
+        $rootNode = $treeBuilder->root('aspose_cloud');
+
+        $rootNode
+            ->children()
+                ->scalarNode('url')->defaultValue('http://api.aspose.com/v1.1')->end()
+                ->arrayNode('app')->isRequired()
+                    ->children()
+                        ->scalarNode('key')->isRequired()->end()
+                        ->scalarNode('sid')->isRequired()->end()
+                        ->scalarNode('outputLocation')->isRequired()->end()
+                    ->end()
+                ->end()
+            ->end()
+        ;
 
         return $treeBuilder;
     }

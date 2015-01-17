@@ -51,6 +51,7 @@ services:
             - [ setAppSID, [%aspose.app.sid%] ]
             - [ setOutPutLocation, [%aspose.app.outputLocation%] ]
             - [ setDebug, [%kernel.debug%] ]
+            - [ setEventDispatcher, [@event_dispatcher]]
 
     aspose.utils:
         class: %aspose.utils.class%

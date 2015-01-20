@@ -13,7 +13,7 @@
     ],    
     "require": {
         "symfony/framework-bundle": ">=2.0",
-        "aspose/cloud-sdk-php": "~0.1"
+        "aspose/cloud-sdk-php": "~1.1"
     },
     "autoload": {
         "psr-0": { "Aspose\\Bundle\\CloudBundle": "" }

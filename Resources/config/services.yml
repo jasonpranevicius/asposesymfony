@@ -52,6 +52,7 @@ services:
             - [ setOutPutLocation, [%aspose.app.outputLocation%] ]
             - [ setDebug, [%kernel.debug%] ]
             - [ setEventDispatcher, [@event_dispatcher]]
+            - [ setLogger, [@logger]]
 
     aspose.utils:
         class: %aspose.utils.class%

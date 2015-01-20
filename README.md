@@ -12,8 +12,9 @@ Add the following lines to your composer.json file:
 // composer.json
 {
     require: {
-        "aspose/cloud-bundle": "dev-master"
-    }
+        "aspose/cloud-bundle": "~0.3"
+    },
+    "prefer-stable": true,
 }
 ```
 

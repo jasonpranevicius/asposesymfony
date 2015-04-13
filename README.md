@@ -1,3 +1,5 @@
+[![PHP version](https://badge.fury.io/ph/aspose%2Fcloud-bundle.svg)](http://badge.fury.io/ph/aspose%2Fcloud-bundle)
+
 #Aspose Cloud for Symfony
 
 This bundle allows you to work with [Aspose Cloud SDK](https://cloud.aspose.com/) in your Symfony applications 
